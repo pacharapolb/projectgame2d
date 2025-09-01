@@ -10,13 +10,13 @@ config_version=5
 
 [application]
 
-config/name="2D-Platformer-Starter"
+config/name="projectgame2d-G19-latest"
 config/tags=PackedStringArray("starterkit")
-run/main_scene="res://Scenes/Levels/Level_01.tscn"
+run/main_scene="uid://bbwnowgf11blb"
 config/features=PackedStringArray("4.4", "Forward Plus")
 boot_splash/bg_color=Color(0.105882, 0.458824, 0.733333, 1)
-boot_splash/image="res://Assets/Splash/2D Platformer Starter Kit Splash.png"
-config/icon="res://Icon.png"
+boot_splash/image="uid://xeh8sn4tfl0r"
+config/icon="uid://xeh8sn4tfl0r"
 
 [autoload]
 
@@ -26,12 +26,10 @@ AudioManager="*res://Scenes/Managers/AudioManager.tscn"
 
 [display]
 
+window/size/viewport_width=1280
+window/size/viewport_height=720
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
-
-[dotnet]
-
-project/assembly_name="2D-Platformer-Starter"
 
 [editor_plugins]
 
@@ -39,7 +37,7 @@ enabled=PackedStringArray()
 
 [global_group]
 
-Traps=""
+Death_Zone=""
 
 [input]
 
@@ -59,6 +57,11 @@ Jump={
 ]
 }
 
+[internationalization]
+
+locale/icon="res://Icon.png"
+
 [rendering]
 
-environment/defaults/default_clear_color=Color(0.105469, 0.457031, 0.730469, 1)
+textures/canvas_textures/default_texture_filter=0
+environment/defaults/default_clear_color=Color(0.776249, 0.506405, 0.285501, 0)
